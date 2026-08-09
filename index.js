@@ -10,7 +10,7 @@ function addImage(){
         const newImage = document.createElement("div");
         newImage.classList.add("newImage");
 
-        //Accessing the input value
+        //Accessing the newImage html
         newImage.innerHTML = `<img src = "${imageInput}.jpg">`;
 
         //Create remove button
