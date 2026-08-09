@@ -17,11 +17,11 @@ function addImage(){
         const removeBtn = document.createElement("button");
         removeBtn.textContent = 'Remove';
         removeBtn.classList.add("removeBtn");
-        removeBtn.onclick = () => imageDisplay.removeChild("newImage");
+        removeBtn.onclick = () => imageDisplay.removeChild(newImage);
 
         //Append image and button
         imageDisplay.appendChild(newImage);
-        imageDisplay.appendChild(removeBtn);
+        newImage.appendChild(removeBtn);
 
     } else {
         alert("Please enter image name");
