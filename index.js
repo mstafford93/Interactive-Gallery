@@ -1,6 +1,6 @@
 function addImage(){
     //HTML elements
-    const imageInput = document.querySelector("input").value; //Can't access value in getElementById
+    const imageInput = document.querySelector("input").value;
     const addImageBtn = document.getElementById("addImageBtn");
     const imageDisplay = document.getElementById("imageDisplay");
 
@@ -11,7 +11,7 @@ function addImage(){
         newImage.classList.add("newImage");
 
         //Accessing the newImage html
-        newImage.innerHTML = `<img src = "${imageInput}.jpg">`;
+        newImage.innerHTML = `<img src = "${imageInput}">`;
 
         //Create remove button
         const removeBtn = document.createElement("button");
